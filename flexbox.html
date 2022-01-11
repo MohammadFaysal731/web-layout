@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid green;
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+
+        .box {
+            border: 4px dotted tomato;
+            width: 200px;
+            height: 200px;
+            font-size: 3em;
+        }
+
+        .tainer {
+            border: 2px solid green;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box2 {
+            border: 4px dotted tomato;
+            width: 200px;
+            font-size: 3em;
+        }
+
+        .ainer {
+            border: 2px solid green;
+            height: 600px;
+            display: flex;
+            align-items: stretch;
+        }
+
+        #box1 {
+            order: 2;
+        }
+
+        #box2 {
+            flex-grow: 1;
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I am flexible right now</h1>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+    </div>
+    <br>
+    <div class="tainer">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+    </div><br>
+    <div class="ainer">
+        <div id="box1" class="box2">Box-1</div>
+        <div id="box2" class="box2">Box-2</div>
+    </div>
+</body>
+
+</html>
